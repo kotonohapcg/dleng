@@ -1,17 +1,19 @@
 //TPDPL P91
+//なぜか91ページのコードが動かない
+//ので、先に92ページのソースコードを
+//作ることにする。
 
 import std.stdio;
 
-//create dynamic array [20]
-int[] array = new int[20];
-//or
-//create dynamic array by auto
+//unittest
+//{
+//	assert();
+//}
 
-auto x = array[5];
-array[7]=42;
 
-unittest
-{
-	assert(x == 0);
-	assert(array[7] == 42);
+void main(){
+	auto array = new double[uniform(1, 128)];
+	foreach(i; 0 .. array.length){
+		array[i] = uniform(0.0, 1.0);
+	}
 }
