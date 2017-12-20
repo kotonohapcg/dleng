@@ -7,9 +7,16 @@ void main(){
 	assert(array !is copy);
 	assert(array == copy);
 
-	string[] s;
-	assert(s is null);
-	assert(s == null);
+	//配列が必ずしも空とは限らない
+	string a[] = new string[2];
+	//a = new string[2];
+	assert(a !is null);
+	a = a[0 .. 0];
+	assert(a !is null);
+
+	//配列長の取得
+	auto sarr = new short[55];
+	assert(sarr.length == 55);
 
 
 }
