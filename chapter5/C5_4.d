@@ -24,5 +24,6 @@ T[] find(T, E)(T[] haystack, E needle){
 	}
 	return haystack;
 }
+
 double[] a = [1.0, 2.5, 2.0, 3.4];
-a  = find(a, 2);
+assert(a[0] == 1.0);
