@@ -5,7 +5,7 @@ import std.stdio;
 "for rep":{
 		"prefix": "REP",
 		"body": [
-			"for(int ($1)=0;($1)<($2);($1)++{",
+			"for(int $1=0;$1<$2;$1++{",
 				"//nothing",
 			"}"
 		],
@@ -16,6 +16,10 @@ import std.stdio;
 //実際に呼び出すとき
 
 REP//ここでTabまたはC-Space
+
+for(int i=0;i<n;i++{
+//nothing
+}
 
 for(int ()=0;()<();()++{
 //nothing
