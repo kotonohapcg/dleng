@@ -1,3 +1,4 @@
+////vimで開いても一切意味がない
 import std.stdio;
 
 //d.jsonにこう記述
