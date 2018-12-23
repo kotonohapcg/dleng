@@ -5,10 +5,12 @@ void main(){
 
 	//loop
 	foreach(line;stdin.byLine()){
-		//文を単語へと分割し、個々の単語を語彙表へ追加する
-		//参考:
+		//個々の単語を語彙表へ追加する
 		foreach(word;splitter(strip(line))){
-			
+			if(word in dictionary) continue;
+			auto newID = dictionary;
+			dictionary[word.idup] = newID;
+			writeln(newID, '\t', word);
 		}
 	}
 }
