@@ -5,10 +5,17 @@ void main() {
     //more simple
     auto arr = new int[20];
 
-    //array access
-    auto array = new int[20];
-    auto x = array[5];
-    assert(x == 0);
-    array[7] = 42;
-    assert(array[7] == 42);
+    //use uniform()"(std.random)"
+    //non-use ref id
+    auto array = new double[uniform(1, 128)];
+    foreach(i; 0 .. array.length) {
+        array[i] = uniform(0.0, 1.0);
+    }
+
+    //use ref id -> 要素を直接参照
+    auto array = new double[uniform(1, 128)];
+    foreach(ref element; 0 .. array.length) {
+        element = uniform(0.0, 1.0);
+    }
+
 }
