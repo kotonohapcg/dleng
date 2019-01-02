@@ -1,4 +1,4 @@
-import std.stdio, std.string, std.algorithm;
+module chapter4.C4;import std.stdio, std.string, std.algorithm;
 
 void main() {
     int[] array1 = new int[20];
